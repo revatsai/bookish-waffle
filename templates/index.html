@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HFitness</title>
+    <link rel="shortcut icon" href="../static/imgs/android-chrome-512x512.png" type="image/x-icon" />
+    <link type="text/css" rel="stylesheet" href="{{ url_for('static', filename='./css/scss/style.css') }}"/>
+    <!-- <link rel="stylesheet" href="../static/css/scss/style.css"> -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <script type = "text/javascript" src = "{{ url_for('static', filename = 'js/style.js') }}" ></script>
+    <!-- <script src="../static/js/style.js"></script> -->
+
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="nav_bar" id="navbar">
+        <a href=""><img src="../static/imgs/Logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="">首頁</a></li>
+          <li><a href="game">遊戲</a></li>
+          <li><a href="rank">排行榜</a></li>
+          <li><a href={{page}}>{{pagename}}</a></li>
+          <li><a href="logout">{{logout}}</a></li>
+        </ul>
+      </div>
+      <div class="main_vision">
+        <img src="/static/imgs/yoga_fix.jpg" alt="Stretching" class="main_pic" ></img>
+        <div class="main_intro">
+          <h4>居家健身新概念</h4>
+          <br>
+          <h1>THE PERFECT<br>SHAPE</h1>
+          <br>
+          <a href="game"><button>開 始 遊 戲</button></a>
+        </div>
+      </div>
+      <div class="product_intro">
+        <img src="/static/imgs/wave.jpg" alt="" class="product_pic" />
+        <div class="sub_title">
+          <h4>WHAT WE OFFER</h4>
+          <h2>DEFINE YOUR GOAL</h2>
+        </div>
+        <div class="product_list">
+          <ul>
+            <a>
+              <i
+                class="fas fa-dumbbell"
+                style="font-size: 80px; margin-bottom: 16px"
+              ></i>
+              <li>娛樂</li>
+              <p>
+                運動 絕對可以不甘寂寞
+              </p>
+              <p>與排行榜的各路好友來場較勁</p>
+            </a>
+            <a>
+              <i
+                class="fas fa-running"
+                style="font-size: 80px; margin-bottom: 16px"
+              ></i>
+              <li>健康</li>
+              <p>
+                打破時間與空間限制</p>
+              <p>
+                在家就能爆汗燃脂</p>
+            </a>
+            <a>
+              <i
+                class="fas fa-chalkboard-teacher"
+                style="font-size: 80px; margin-bottom: 16px"
+              ></i>
+              <li>居家運動</li>
+              <p>
+                動態感知
+              <p>
+              <p>
+                及時互動
+              <p>
+              <p>
+                模式隨選
+              <p>
+            </a>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <footer>
+      <div class="information">
+        <ul class="information_list">
+          <li>
+            <h4>ABOUT US</h4>
+            <p>
+              疫情新時代來臨居家運動、居家健身盛行，透過影像追蹤、影像辨識，製作互動性高的小遊戲。讓想要運動又不便出門的人，也能在家運動。
+            </p>
+          </li>
+          <li>
+            <h4>CONTACT US</h4> 
+            <p>
+              <i class="fas fa-home"></i><span>408 台中市公益路2段51號18樓<br> 
+              <i class="fas fa-globe"></i><span>https://www.iiiedu.org.tw/taichung/<br> 
+              <i class="fas fa-phone-alt"></i><span>(04)2326-5860
+              </p>
+          </li>
+        </ul>
+      </div>
+      <div class="copy_right">
+        <p>Copyright 2021 All Right Reserved By: HFitness</p>
+        <ul>
+          <li>FOLLOW US ON</li>
+          <li><a><i class="fab fa-facebook-square"></i></a></li>
+          <li><a><i class="fab fa-youtube"></i></a></li>
+          <li><a><i class="fab fa-instagram"></i></a></li>
+        </ul>
+      </div>
+    </footer>
+    
+  </body>
+</html>

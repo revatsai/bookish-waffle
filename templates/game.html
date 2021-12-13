@@ -1,0 +1,349 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Game</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- bootstrap & jQuery -->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <link
+      href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+      rel="stylesheet"
+    />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <!-- my css & js -->
+    <link rel="stylesheet" href="../static/css/pj_game_01.css" />
+    <script src="../static/js/pj_game_01.js" defer></script>
+    <link
+      rel="shortcut icon"
+      href="../static/imgs/android-chrome-512x512.png"
+      type="image/x-icon"
+    />
+
+    <!-- my css & js end -->
+  </head>
+
+  <body>
+    <div class="container1">
+      <div class="nav_bar" id="navbar">
+        <a href=""><img src="../static/imgs/Logo.png" alt="logo" /></a>
+        <ul>
+          <li><a href="/">首頁</a></li>
+          <li><a href="game">遊戲</a></li>
+          <li><a href="rank">排行榜</a></li>
+          <li><a href="{{page}}">{{pagename}}</a></li>
+          <li><a href="logout">{{logout}}</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div
+      id="demo"
+      class="carousel slide"
+      data-ride="carousel"
+      style="background-color: white"
+    >
+      <!-- Indicators -->
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <!-- <li data-target="#demo" data-slide-to="2"></li> -->
+      </ul>
+
+      <!-- The slideshow -->
+      <div class="carousel-inner" style="width: 100%">
+        <div class="carousel-item active">
+          <img
+            src="../static/imgs/imin.png"
+            alt="Box_Attack"
+            width="1100"
+            height="500"
+            class="mx-auto d-block"
+            style="margin-top: 20px; margin-bottom: 20px;width: 800px;height: 600px;"
+          />
+          <div class="carousel-caption d-md-block">
+            <h5 style="font-family: '微軟正黑體'">遊戲模式 1 <br />I'M IN</h5>
+            <!-- <p>Some intro......</p> -->
+            <div class="slider-btn">
+              <!-- <button class="btn btn-1">開始遊戲</button> -->
+              <a class="btn btn-1 text-white no-underline" href="/imin"
+                >開始遊戲</a
+              >
+              <a class="btn btn-2 text-white no-underline" href="#mode_01"
+                >詳細介紹</a
+              >
+            </div>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="../static/imgs/flash.png"
+            alt="Reaction"
+            width="1100"
+            height="500"
+            class="mx-auto d-block"
+            style="margin-top: 20px; margin-bottom: 20px;width: 800px;height: 600px;"
+
+          />
+          <div class="carousel-caption d-md-block">
+            <h5 style="font-family: '微軟正黑體'">遊戲模式 2 <br />FLASH</h5>
+            <!-- <p>Some intro......</p>  -->
+            <div class="slider-btn">
+              <!-- <button class="btn btn-1">開始遊戲</button> -->
+              <a class="btn btn-1 text-white no-underline" href="/flash"
+                >開始遊戲</a
+              >
+              <a class="btn btn-2 text-white no-underline" href="#mode_02"
+                >詳細介紹</a
+              >
+            </div>
+          </div>
+        </div>
+        <!-- <div class="carousel-item"> -->
+        <!-- <img -->
+        <!-- src="../static/imgs/MadHops.jpg" -->
+        <!-- alt="Mad_Hops" -->
+        <!-- width="1100" -->
+        <!-- height="500" -->
+        <!-- class="mx-auto d-block" -->
+        <!-- /> -->
+        <!-- <div class="carousel-caption d-md-block"> -->
+        <!-- <h5>First slide</h5> -->
+        <!-- <p>Some intro......</p> -->
+        <!-- <div class="slider-btn"> -->
+        <!-- <button class="btn btn-1">開始遊戲</button> -->
+        <!-- <a class="btn btn-2 text-white no-underline" href="#mode_03" -->
+        <!-- >詳細介紹</a -->
+        <!-- > -->
+        <!-- </div> -->
+        <!-- </div> -->
+        <!-- </div> -->
+      </div>
+
+      <!-- Left and right controls -->
+      <div class="photo_button" style="background-color: white">
+        <a
+          class="carousel-control-prev"
+          href="#demo"
+          data-slide="prev"
+          style="margin: 0; padding: 0"
+        >
+          <span
+            class="carousel-control-prev-icon"
+            style="
+              background-color: rgba(180, 180, 180, 0.822);
+              width: 35px;
+              height: 60px;
+              border: 1px solid;
+              border-radius: 5px;
+            "
+          ></span>
+        </a>
+        <a class="carousel-control-next" href="#demo" data-slide="next">
+          <span
+            class="carousel-control-next-icon"
+            style="
+              background-color: rgba(180, 180, 180, 0.822);
+              width: 35px;
+              height: 60px;
+              border: 1px solid;
+              border-radius: 5px;
+            "
+          ></span>
+        </a>
+      </div>
+    </div>
+
+    <div class="parallax-header">
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content">
+          <h1>遊 戲 詳 細 介 紹</h1>
+          <p>先了解如何進行 再開始遊戲 !</p>
+        </div>
+      </div>
+      <!-- Container End -->
+    </div>
+
+    <div class="container">
+      <div class="content row" style="border: 0px solid;border-radius: 50px;height: 500px;margin-top: 40px;margin-bottom:40px">
+        <!-- Left -->
+        <div class="col-lg-4 left" style="padding-top: 30px;padding-left: 60px;">
+          <h1 class="primary-color" id="mode_01">
+            模式1.<br />
+            I'm in
+          </h1>
+          <p class="text-justify">
+            在指定時間內把身體縮到隨機出現的方框內，有時需要跳躍，有時需要趴下才能得分。建議在空間稍大一點的地方進行，才不會撞到東西。
+          </p>
+          <p class="text-justify">
+            另外，衣服顏色盡可能不要跟背景顏色接近，以免偵測不到動作，影響遊戲體驗。
+          </p>
+        </div>
+        <!-- Left End -->
+
+        <!-- Right -->
+        <div
+          class="col-lg right"
+          style="display: flex; justify-content: space-evenly"
+        >
+          <img src="../static/imgs/imin.png" style="height: 450px;padding-top: 60px;">
+        </div>
+        <!-- Right End -->
+      </div>
+    </div>
+
+    <div class="parallax-header bg-01">
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content"></div>
+      </div>
+      <!-- Container End -->
+    </div>
+
+    <div class="container">
+      <div class="content row" style="border: 0px solid;border-radius: 50px;height: 500px; margin-top: 40px;margin-bottom:40px">
+        <!-- Left -->
+        <div class="col-lg-4 left" style="padding-top: 60px;padding-left: 60px;">
+          <h1 class="primary-color" id="mode_02">
+            模式2.<br />
+            Flash
+          </h1>
+          <p class="text-justify">
+            在指定時間內依順序碰到綠色圈圈就可以得分，考驗你的反應力。
+          </p>
+        </div>
+        <!-- Left End -->
+
+        <!-- Right -->
+        <div
+          class="col-lg right"
+          style="display: flex; justify-content: space-evenly"
+        >
+          <img src="../static/imgs/flash.png" style="height: 450px;width: 650px;;padding-top: 60px;">
+        </div>
+
+        <!-- Right End -->
+      </div>
+    </div>
+
+    <div class="parallax-header bg-02">
+      <!-- Container -->
+      <div class="container">
+        <div class="header-content"></div>
+      </div>
+      <!-- Container End -->
+    </div>
+
+    <!-- <div class="container"> -->
+    <!-- <div class="content row"> -->
+    <!-- Left -->
+    <!-- <div class="col-lg-4 left"> -->
+    <!-- <h1 class="primary-color" id="mode_03"> -->
+    <!-- 模式3.<br /> -->
+    <!-- 待定...... -->
+    <!-- </h1> -->
+    <!-- <p class="text-justify"> -->
+    <!-- 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 文字 -->
+    <!-- 文字 文字 。 -->
+    <!-- </p> -->
+    <!-- </div> -->
+    <!-- Left End -->
+
+    <!-- Right -->
+    <!-- <div -->
+    <!-- class="col-lg right" -->
+    <!-- style="display: flex; justify-content: space-evenly" -->
+    <!-- > -->
+    <!-- <img src="../static/imgs/MadHops.jpg" class="w-60" /> -->
+    <!-- </div> -->
+    <!-- Right End -->
+    <!-- </div> -->
+    <!-- </div> -->
+
+    <!-- <div class="parallax-header bg-03"> -->
+    <!-- Container -->
+    <!-- <div class="container"> -->
+    <!-- <div class="header-content"></div> -->
+    <!-- </div> -->
+    <!-- Container End -->
+    <!-- </div> -->
+
+    <!-- go to top button -->
+    <button onclick="topFunction()" id="goTopBtn" title="Go to top" style="border: 0px solid;">
+      <li class="arrow"></li>
+    </button>
+    <!-- go to top button end -->
+
+    <footer class="bg-dark-303030 pt-3 pb-0">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <!-- left footer -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h6 class="mb-2 font-weight-bold">ABOUT US</h6>
+            <hr />
+            <p>
+              疫情新時代來臨居家運動、居家健身盛行，透過影像追蹤、影像辨識，製作互動性高的小遊戲。讓想要運動又不便出門的人，也能在家運動。
+            </p>
+          </div>
+          <!-- left footer end -->
+
+          <!-- right footer -->
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <h6 class="mb-2 font-weight-bold">CONTACT US</h6>
+            <hr />
+            <p>
+              <li class="fa fa-home mr3 text-secondary"></li>
+              408 台中市公益路2段51號18樓
+            </p>
+            <p>
+              <li class="fa fa-globe mr3 text-secondary"></li>
+              https://www.iiiedu.org.tw/taichung/
+            </p>
+            <p>
+              <li class="fa fa-phone mr3 text-secondary"></li>
+              (04)2326-5860
+            </p>
+          </div>
+          <!-- right footer end -->
+        </div>
+      </div>
+    </footer>
+    <!-- CP right -->
+    <div class="bg-dark-2b2b2b">
+      <div class="container text-center text-md-left">
+        <div class="row">
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <p>Copyright 2021 All Right Reserved By: Team 5</p>
+          </div>
+          <div class="col-md-4 col-lg-4 col-xl-4 mx-auto mt-3">
+            <ul class="list-unstyled list-inline">
+              <li class="list-inline-item">FOLLOW US ON</li>
+              <li class="list-inline-item">
+                <a href="#" class="text-secondary"
+                  ><i class="fa fa-facebook-square"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-secondary"
+                  ><i class="fa fa-youtube-play"></i
+                ></a>
+              </li>
+              <li class="list-inline-item">
+                <a href="#" class="text-secondary"
+                  ><i class="fa fa-instagram"></i
+                ></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- CP right end -->
+  </body>
+</html>

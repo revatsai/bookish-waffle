@@ -1,0 +1,452 @@
+* {
+  scroll-behavior: smooth;
+}
+
+.logo {
+  width: 80px;
+  height: 48px;
+}
+.carousel-inner img {
+  width: 60%;
+  height: 60%;
+}
+
+/* ---- Slider ---- */
+.carousel-item {
+  /* height: 100vh; */
+  /* min-height: 300px; */
+  background: no-repeat scroll center scroll;
+  background-size: cover;
+}
+
+.carousel-item::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  background-color: rgb(255, 255, 255);
+  opacity: 0.1;
+}
+
+.carousel-caption h5 {
+  font-size: 40px;
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.925);
+}
+
+.carousel-caption p {
+  font-size: 18px;
+  font-weight: 800;
+  color: rgb(36, 208, 117);
+}
+
+.slider-btn {
+  margin-top: 30px;
+}
+
+.slider-btn .btn {
+  background-color: rgb(36, 208, 117);
+  color: white;
+  border-radius: 30px;
+  padding: 8px 30px;
+  font-size: 16px;
+  margin-right: 18px;
+  transition: all 300ms linear;
+}
+
+.slider-btn .btn:hover {
+  background-color: rgb(27, 163, 90);
+}
+
+/* Slider end */
+
+.parallax-header {
+  background: rgb(250, 250, 250);
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.3),
+      rgba(255, 255, 255, 0.8)
+    ),
+    url(../imgs/wave2.png);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-01 {
+  background: #000;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(199, 199, 199, 0.6)
+    ),
+    url(../imgs/home_ex06.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bg-02 {
+  background: #000;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(199, 199, 199, 0.6)
+    ),
+    url(../imgs/home_ex01.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* .bg-03 {
+  background: #000;
+  background: linear-gradient(
+      rgba(255, 255, 255, 0.2),
+      rgba(199, 199, 199, 0.6)
+    ),
+    url(../imgs/home_ex08.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+} */
+
+.header-content {
+  padding: 220px 0 150px 0;
+}
+
+.header-content h1 {
+  font-weight: 700;
+}
+
+.content {
+  margin-top: -80px;
+  background: white;
+  box-shadow: 0 0 20px -6px rgba(0, 0, 0, 0.2);
+}
+
+.content .left {
+  padding-top: 40px;
+}
+
+.content .right {
+  padding: 0;
+}
+
+.text-justify {
+  text-align: justify;
+}
+
+.primary-color {
+  color: rgb(36, 208, 117);
+}
+
+/* detail intro button */
+.no-underline:hover {
+  text-decoration: none;
+}
+
+/* detail intro button */
+
+/* go to top button */
+#goTopBtn {
+  display: none;
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  z-index: 30;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: rgba(51, 255, 157);
+  cursor: pointer;
+  padding: 22px 10px;
+  border-radius: 4px;
+  border: 1px solid rgb(19, 168, 88);
+  width: 50px;
+  height: 50px;
+  transition: all 300ms linear;
+}
+
+#goTopBtn:hover {
+  background-color: rgba(71, 255, 157, 0.85);
+}
+
+.arrow {
+  border: solid rgba(71, 255, 157, 0.85);
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 6px;
+  transform: rotate(-135deg);
+  
+}
+
+/* go to top button end */
+
+/* Footer */
+.bg-dark-303030 {
+  background-color: #303030;
+}
+.bg-dark-2b2b2b {
+  background-color: #2b2b2b;
+}
+footer {
+  font-size: 14px;
+  color: #c9c9c9;
+}
+footer ~ div {
+  font-size: 12px;
+  color: #c9c9c9;
+}
+/* Footer end */
+
+.container1 {
+  margin: 0 auto;
+  max-width: 100%;
+}
+.container1 .nav_bar ul {
+  margin-left: 60px !important;
+}
+.container1 .nav_bar {
+  padding-left: 75px !important;
+  top: 0;
+  width: 100%;
+  font-size: large;
+  height: 48px;
+  text-align: center;
+  padding-right: 36px;
+  padding-left: 36px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  text-align: center;
+  -webkit-transition: top 0.3s;
+  transition: top 0.3s;
+  background-color: white;
+  z-index: 3;
+  /* Dropdown button on hover & focus */
+  /* The container <div> - needed to position the dropdown content */
+  /* Dropdown Content (Hidden by Default) */
+  /* Links inside the dropdown */
+  /* Change color of dropdown links on hover */
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+}
+
+.container1 .nav_bar a {
+  float: left;
+  display: block;
+  color: #181818;
+  text-align: center;
+  padding: 15px;
+  text-decoration: none;
+}
+
+.container1 .nav_bar .dropbtn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  height: 48px;
+  background-color: #ffffff;
+  color: #202020;
+  padding: 24px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.container1 .nav_bar .dropbtn:hover,
+.container1 .nav_bar .dropbtn:focus {
+  height: 48px;
+  background-color: #ffffff;
+}
+
+.container1 .nav_bar .dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.container1 .nav_bar .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #ffffff;
+  min-width: 100px;
+  -webkit-box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.container1 .nav_bar .dropdown-content a {
+  color: #050505;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.container1 .nav_bar .dropdown-content a:hover {
+  background-color: #ececec;
+}
+
+.container1 .nav_bar .show {
+  display: block;
+}
+
+.container1 .nav_bar ul {
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 16px;
+}
+
+.container1 .nav_bar ul li {
+  margin: 24px;
+}
+
+.container1 .nav_bar img {
+  height: 48px;
+}
+
+.container1 .main_vision {
+  width: 100%;
+  height: auto;
+}
+
+.container1 .main_vision .main_pic {
+  width: 100%;
+  height: auto;
+}
+
+.container1 .main_vision .main_intro {
+  position: absolute;
+  top: 40%;
+  left: 10%;
+}
+
+.container1 .main_vision .main_intro h4 {
+  display: contents;
+  letter-spacing: 8px;
+  font-size: 48px;
+}
+
+.container1 .main_vision .main_intro h1 {
+  display: contents;
+  letter-spacing: 16px;
+  font-size: 88px;
+  margin-top: 8px;
+}
+
+.container1 .main_vision .main_intro button {
+  cursor: pointer;
+  color: white;
+  background-color: #0add5b;
+  border: none;
+  margin-top: 10px;
+  width: 200px;
+  height: 48px;
+  border-radius: 24px;
+  font-size: larger;
+}
+
+.container1 .product_intro {
+  width: 100%;
+  height: auto;
+  position: relative;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.container1 .product_intro .product_pic {
+  -webkit-filter: blur(3px);
+  position: relative;
+  z-index: -1;
+  width: 100%;
+  height: 640px;
+}
+
+.container1 .product_intro .sub_title {
+  position: absolute;
+  top: 10%;
+  text-align: center;
+  letter-spacing: 16px;
+}
+
+.container1 .product_intro .sub_title h4 {
+  font-size: 32px;
+  font-weight: 600;
+  color: #0add5b;
+}
+
+.container1 .product_intro .sub_title h2 {
+  font-size: 48px;
+  font-weight: 700;
+}
+
+.container1 .product_intro .product_list {
+  width: 100%;
+  position: absolute;
+  top: 50%;
+}
+
+.container1 .product_intro .product_list ul {
+  letter-spacing: 3px;
+  font-size: 24px;
+  font-weight: 600;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+  -ms-flex-pack: space-evenly;
+  justify-content: space-evenly;
+}
+
+.container1 .product_intro .product_list ul a {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  margin: 20px;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.container1 .product_intro .product_list ul li {
+  display: block;
+  width: 360px;
+}
+
+.container1 .product_intro .product_list ul p {
+  margin-top: 10px;
+  color: #757575;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+li {
+  list-style: none;
+}

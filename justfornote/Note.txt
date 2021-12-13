@@ -1,0 +1,33 @@
+https://zhuanlan.zhihu.com/p/104273184
+https://www.pyimagesearch.com/2019/09/02/opencv-stream-video-to-web-browser-html-page/
+
+sudo apt-get update -y
+sudo apt-get install -y python3-flask-sqlalchemy
+sudo pip3 install pymysql
+make sure that 'pymsql' download in the right selected interpreter
+https://vitux.com/ubuntu-xampp/
+https://www.howtoforge.com/how-to-install-xampp-on-ubuntu-20-04/
+sudo /opt/lampp/lampp start
+sudo /opt/lampp/lampp stop
+start XAMPP gui : sudo /opt/lampp/manager-linux-x64.run
+
+create a desktop shortcut for the XAMPP gui : 
+1. gedit ~/Desktop/xampp.desktop
+2.#!/usr/bin/env xdg-open
+[Desktop Entry]
+Name=XAMPP GUI
+Type=Application
+Exec=sh -c "pkexec env DISPLAY=$DISPLAY XAUTHORITY=$XAUTHORITY sudo /opt/lampp/manager-linux-x64.run"
+Terminal=false
+Icon=/opt/lampp/htdocs/favicon.ico
+Terminal=false
+
+Handling the next URL when logging in with Flask
+https://blog.teclado.com/handling-the-next-url-when-logging-in-with-flask/
+
+Protecting endpoints in Flask apps by requiring login
+https://blog.teclado.com/protecting-endpoints-in-flask-apps-by-requiring-login/
+
+
+save score into database
+https://blog.techbridge.cc/2017/08/12/python-web-flask101-tutorial-sqlalchemy-orm-database-models/
